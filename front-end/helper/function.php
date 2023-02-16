@@ -56,7 +56,8 @@ function console_log($data)
 }
 
 function postApi($data, $route)
-{
+{  /*
+
   $option = [
       'method' => 'POST',
       'content' => json_encode($data),
@@ -65,20 +66,32 @@ function postApi($data, $route)
       "user-agent" => "toto",
   ];
 
-
   $context = stream_context_create($option);
-  $fp = fopen('192.168.128.6:8082/' . $route, 'r', false, $context) or die(error_get_last());
+  $fp = fopen('10.160.33.111:8082/' . $route, 'r', false, $context) or die(error_get_last());
   $data = stream_get_contents($fp);
   fclose($fp);
+  */
 
-  $data = json_decode($data);
+  $ch = curl_init();
+  $curlConfig = array(
+      CURLOPT_URL            => '192.168.128.6:8082/' . $route,
+      CURLOPT_POST           => true,
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_POSTFIELDS     => json_encode($data),
+      CURLOPT_HTTPHEADER => array('Content-Type:application/json')
+  );
+  curl_setopt_array($ch, $curlConfig);
+  $result = curl_exec($ch);
+  curl_close($ch);
+
+
+  $response = json_decode($result);
 
   return $data;
 }
 
 function getApi($route)
-{
-
+{/*
 
   $opts = array(
     'http' => array(
@@ -86,11 +99,17 @@ function getApi($route)
     )
   );
   $context = stream_context_create($opts);
-  $path = "192.168.128.6:8082/" . $route;
+  $path = "localhost:8082/" . $route;
   $fp = fopen($path, 'r', false, $context);
   $data = stream_get_contents($fp);
   fclose($fp);
-  $data = json_decode($data, true);
+*/
+  $curl = curl_init();
+  curl_setopt($curl, CURLOPT_URL, "192.168.128.6:8082//" . $route);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+  $output = curl_exec($curl);
+  curl_close($curl);
+  $data = json_decode($output, true);
 
   return $data;
 }
