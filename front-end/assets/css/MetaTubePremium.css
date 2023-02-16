@@ -1,0 +1,76 @@
+.MetaTubePremium-container{
+    background-image: url(../img/MetaTubePremium/ytk_lp2_hero_white_desktop_2880x1200.png);
+    padding: var(--ytd-margin-24x) 0 var(--ytd-margin-12x);
+    background-position: center top;
+    background-size: cover;
+    min-height: 800px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container{
+    padding: 3%;
+    display: flex;
+}
+
+button.btn-free {
+    border-radius: 10px;
+    border: 1px solid blue;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+}
+
+.premium-p{
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+.link-premium{
+    color:royalblue;
+    font-weight: bold;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #181818;
+}
+
+.ad-free{
+    width: 312px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-right: 24px;
+}
+
+.no-add-play-logo{
+    width: 86px;
+    height: 84px;
+    padding-bottom: 16px;
+}
+
+p.text-ad{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    padding-bottom: 16px;
+    margin:0px;
+}
+
+p.text-ad2{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px;
+}

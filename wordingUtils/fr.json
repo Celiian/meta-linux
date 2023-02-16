@@ -1,0 +1,218 @@
+{
+    "profile": {
+        "navBar": {
+            "placeHolderSearch": "Recherche",
+            "buttonLogin": "Connexion",
+            "buttonChannel": "Ma Chaîne",
+            "buttonSubscription": "Abonnements",
+            "buttonStudio": "MetaStudio",
+            "buttonSignOut": "Déconnexion",
+            "buttonAccount": "Mon Compte",
+            "buttonData": "Vos données sur MetaTube",
+            "buttonRestricted": "Mode Restreint : Off",
+            "labelThemeDark": "Sombre",
+            "labelThemeBright": "Light",
+            "tooltipSearch": "Recherchez quelque chose..",
+            "tooltipLogin": "Se connecter à votre compte",
+            "tooltipUpload": "Upload une vidéo",
+            "tooltipNotification": "Notifications",
+            "tooltipMeta": "Accueil MetaTube"
+        },
+        "button": {
+            "buttonPassword": "Changer votre mot de passe",
+            "buttonDelete": "Supprimer votre compte",
+            "buttonUser": "Changer votre profil"
+        },
+        "passModal": {
+            "oldpassword": "Votre ancien mot de passe",
+            "confirmpassword": "Confirmer votre mot de passe",
+            "newpassword": "Votre nouveau mot de passe"
+        },
+        "deleteModal": {
+            "title": "Supprimer votre compte",
+            "sentence": "Êtes-vous sûr de vouloir supprimer votre compte ?"
+        },
+        "profilModal": {
+            "title": "Changer votre profil"
+        },
+        "page": {
+            "title": "Changer comment les autres vous voient sur MetaTube",
+            "smallTitle": "Connecté avec l'adresse :   "
+        },
+        "accordeon": {
+            "underTitle1": "Votre chaîne MetaTube",
+            "underTitle2": "Votre Compte",
+            "underTitle3": "Vos Informations",
+            "buttonCreate": "Créer une chaîne",
+            "ButtonChannel": "Ma Chaîne",
+            "labelUsername": "Pseudonyme",
+            "labelUEmail": "Email",
+            "labelDate": "Date de naissance"
+        }
+    },
+    "global": {
+        "title": "MetaTube",
+        "filterButton": "Filtres",
+        "filterBoxTitle1": "Date de mise en ligne",
+        "filterBoxTitle2": "Type",
+        "filterBoxTitle3": "Trier par",
+        "filterBoxMenuButton1": "Dernière heures",
+        "filterBoxMenuButton2": "Cette semaine",
+        "filterBoxMenuButton3": "Ce mois-ci",
+        "filterBoxMenuButton4": "Cette année",
+        "filterBoxMenuButton5": "Video",
+        "filterBoxMenuButton6": "Playlist",
+        "filterBoxMenuButton7": "Chaînes",
+        "filterBoxMenuButton8": "Pertinance",
+        "filterBoxMenuButton9": "Date de mise en ligne",
+        "filterBoxMenuButton10": "Nombre de vues",
+        "filterBoxMenuButton11": "Classement"
+    },
+    "creation": {
+        "createTitle": "Ici, vous pouvez voir comment les autres vous voient",
+        "create": "Créer une chaîne",
+        "name": "Nom",
+        "Image": "./assets/img/Channel/play.png",
+        "Import": "Choisir une image",
+        "cancel": "Annuler"
+    },
+    "channel": {
+        "HomeSelection": "Accueil",
+        "VideoSelection": "Videos",
+        "PlaylistsSelection": "Playlists",
+        "ChannelSelection": "Chaînes",
+        "AboutUsSelection": "A Propos de nous",
+        "LockerSelection": "Locker",
+        "introduction": "Video Intro",
+        "videoOnline": "Video Online",
+        "popular": "Video Popular",
+        "play": "./assets/img/Channel/play.png"
+    },
+    "form": {
+        "login": {
+            "titleLogin": "Merci de remplir le formulaire pour vous connecter",
+            "adress": "Adresse Mail",
+            "placeholderAdress": "Ecrivez votre mail",
+            "password": "Mot de passe",
+            "placeholderPassword": "Ecrivre votre mot de passe",
+            "buttonLogin": "Connection",
+            "buttonToRegister": "Je n'ai pas de compte"
+        },
+        "register": {
+            "titleRegister": "Merci de remplir le formulaire pour créer un compte: ",
+            "labelProfile": "Selectionner une photo",
+            "labelPseudo": "Pseudo",
+            "placeholderPseudo": "Ecrivez un pseudo",
+            "labelBirthday": "Date de naissance",
+            "labelAdress": "Adresse Mail",
+            "placeholderAdress": "Ecrivez votre adresse mail",
+            "labelPassword": "Mot de passe",
+            "placeholderPassword": "Ecrivez votre mot de passe",
+            "buttonRegister": "Inscription",
+            "buttonToLogin": "J'ai déjà un compte"
+        },
+        "updatePass": {
+            "modalBtn": "Changez votre mot de passe",
+            "labelAdress": "Adresse Mail",
+            "placeholderAdress": "Confirmer votre adresse mail",
+            "labelPassword": "Mot de passe",
+            "placeholderPassword": "Ecrivez votre nouveau mot de passe",
+            "buttonUpdate": "Changez votre mot de passe"
+        },
+        "deleteAccount": {
+            "modalBtn": "Supprimer votre compte",
+            "title": "Supprimer le compte",
+            "question": "Êtes-vous sûr de bien vouloir supprimer votre compte ?",
+            "buttonCancel": "Annuler",
+            "buttonDelete": "Supprimer"
+        },
+        "error": {
+            "signup": "Attention, vous n'avez pas remplis toutes les cases du formulaire",
+            "pseudo": "Attention, votre pseudo est incorrect",
+            "mailNotValid": "Adresse mail invalide",
+            "mailAlreadyUse": "Cette adresse mail est déjà utilisée",
+            "birthday": "Désolé mais vous devez avoir au moins 11 ans pour accéder à MetaTube",
+            "mailNotUse": "Cettre adresse n'est liée à aucun compte",
+            "password": "Attention. Mot de passe incorrect"
+        }
+    },
+    "menu": {
+        "nav-elements": {
+            "Home": "Accueil",
+            "Explorer": "Explorer",
+            "Subscriptions": "Abonnements",
+            "Library": "Bibliothèque",
+            "History": "Historique",
+            "YourVideos": "Vos vidéos",
+            "WatchLaters": "Regarder plus tard",
+            "LikedVideos": "Vidéos aimées",
+            "More": "Plus",
+            "Less": "Moins",
+            "MetaTube Premium": "MetaTube Premium",
+            "Movies and Shows": "Movies and Shows",
+            "Gaming": "Gaming",
+            "Live": "Live",
+            "Music": "Music",
+            "Sports": "Sports",
+            "Learning": "Apprendre",
+            "News": "Actus",
+            "Fashion & Beauty": "Fashion & Beauty",
+            "Settings": "Settings",
+            "Report": "Report History",
+            "Help": "Help",
+            "SendFeedback": "Send Feedback"
+        },
+        "titles": {
+            "subscriptions": "SUBSCRIPTIONS",
+            "others": "MORE FROM METATUBE"
+        },
+        "footer": {
+            "About": "About",
+            "Press": "Press",
+            "Copyright": "Copyright",
+            "Contact us": "Contact us",
+            "Creators": "Creators",
+            "Advertise": "Advertise",
+            "Developers": "Developers",
+            "Report hateful content under LCEN": "Report hateful content under LCEN",
+            "Terms": "Terms",
+            "Privacy": "Privacy",
+            "Policy & Safety": "Policy & Safety",
+            "How YouTube works": "How YouTube works",
+            "Test new features": "Test new features",
+            "copyright": "© 2022 Metatubes -L1 Alt Cergy/Paris ❤️"
+        }
+    },
+    "home": {
+        "views": "views",
+        "date": "ago"
+    },
+    "explore": {
+        "rise": "Creator on the rise",
+        "Trending": "Trending",
+        "Music": "Music",
+        "Movies": "Movies & Shows",
+        "Live": "Live",
+        "Gaming": "Gaming",
+        "News": "News",
+        "Sports": "Sports",
+        "Learning": "Learning",
+        "Fashion": "Fashion & Beauty",
+        "TrendingTitle": "Trending Videos"
+    },
+    "MetaTubePremium": {
+        "title": "MetaTube and MetaTube Music ad-free offline, and in the background",
+        "txt-button": "Try it Free",
+        "price": "2-month free trial • Then €11.99/month",
+        "remind-text": "We'll remind you 7 days before your trial ends Recurring billing • Cancel anytime",
+        "add-price": "Or save money with a ",
+        "link-add-price": "family or student plan",
+        "link-premium": "Restrictions apply. Learn more here.",
+        "text-ad": "Ad-free & background play",
+        "text-ad2": "Watch videos uninterrupted by ads, while using other apps, or when the screen is locked.",
+        "text-dl": "Downloads",
+        "text-dl2": "Save videos for when you really need them – like when you’re on a plane or commuting.",
+        "text-music": "MetaTube Music Premium",
+        "text-music2": "Download our new music app and listen without interruptions."
+    }
+}

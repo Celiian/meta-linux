@@ -1,0 +1,60 @@
+:root {
+  --height-search: 40px;
+  --placeholder-color: rgb(177, 177, 177);
+  --background-color-search: rgb(53, 52, 52);
+  --background-color-search-button-hover: rgb(82, 82, 82);
+  --background-color-search-button: rgb(51, 51, 51);
+}
+
+#searchBar {
+  background-color: var(--color-theme);
+}
+
+.navSearchBox {
+  height: var(--height-search);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 60%;
+}
+
+.searchButton {
+  width: 70px;
+  height: var(--height-search);
+  background-color: var(--background-color-search-button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+}
+
+.searchIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.searchButton:hover {
+  background-color: var(--background-color-search-button-hover);
+}
+
+#searchbarContent {
+  color: var(--color-text);
+  border-radius: 0;
+  height: var(--height-search);
+  width: 60%;
+  line-height: var(---height-search);
+  background-color: var(--background-color-search);
+}
+
+#searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+::placeholder {
+  color: var(--placeholder-color);
+  letter-spacing: 0.5px;
+}

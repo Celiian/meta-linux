@@ -1,0 +1,236 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.explorer-container {
+    margin-top: var(--height-page);
+    width: 100%;
+    height: 100%;
+}
+
+.explorer-categories {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+
+.category-explorer {
+    background-color: rgb(33, 33, 33);
+    width: 200px;
+    border-radius: 5px;
+    margin: 30px 10px;
+    height: 116px;
+}
+
+.category-explorer:hover {
+    background-color: var(--elements-hover);
+}
+
+.category-content {
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.category-content img {
+    width: 32px;
+    height: 32px;
+}
+
+.category-explorer-title {
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+/* Creator rise Category */
+
+.creator-rise {
+    width: 100%;
+}
+
+.creator-rise-content {
+    width: 100%;
+    height: 100%;
+}
+
+.creator-rise-grid {
+    width: 100%;
+    height: 100%;
+}
+
+.creator-rise-content-channel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-left: 7%;
+}
+
+.creator-rise-content-channel-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.creator-rise-content-name {
+    font-family: var(--font);
+    font-size: 20px;
+    color: var(--color-text);
+}
+
+.creator-rise-content-tag {
+    color: black;
+    font-family: var(--font);
+    background: linear-gradient(-45deg, #ee7752,
+            #e73c7e, #23a6d5, #23d5ab, #d57f23, #d5c923);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.creator-rise-grid {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.creator-rise-video {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.border-explore {
+    border-top: 0.5px var(--elements-border) solid;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.next, .prev {
+    width: 60px;
+    min-height: 220px;
+    box-shadow: 50px 0px 30px 0px rgb(12, 12, 12);
+    border: 0px solid red;
+    border-style: none;
+    align-self: center;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.show-arrow {
+    display: flex;
+}
+
+.hide-arrow {
+    display: none;
+}
+
+.next {
+    box-shadow: -30px 0px 30px 0px rgb(12, 12, 12);
+}
+
+.next img, .prev img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Trending videos */
+
+.trending-title {
+    font-size: var(--font-medium);
+    font-family: var(--font);
+    font-weight: bold;
+    margin-left: 7%;
+    color: var(--color-text);
+}
+
+.thumbnail-trend-explorer {
+    height: 150px;
+    object-fit: cover;
+    min-width: 250px;
+}
+
+.trending-video-content {
+    padding: var(--video-content-padding);
+    width: 80%;
+    min-width: var(--video-content-minwidth);
+    height: fit-content;
+    max-height: 220px;
+    overflow: hidden;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: row;
+}
+
+.next-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.next-content-infos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.next-content-infos p {
+    margin: 0;
+    padding-right: 7px;
+    font-family: var(--font);
+}
+
+.trending-video-content:hover {
+    cursor: pointer;
+}
+
+.explorer-video-title {
+    width: 100%;
+    color: var(--color-text);
+    font-family: var(--font);
+}
+
+.explorer-video-channel-name:hover {
+    color: var(--color-theme);
+    -webkit-text-stroke: black;
+}

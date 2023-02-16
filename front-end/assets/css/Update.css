@@ -1,0 +1,14 @@
+.update--form{
+    display: none;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+}
+.backfr{
+    display: none;
+    position: fixed;
+    background: #000000a8;
+    z-index: 5000;
+    width: 110%;
+    height: 200%;
+    top: 0;
+}

@@ -1,0 +1,136 @@
+body {
+    margin: 0px;
+}
+
+.filterButton {
+    padding: 1%;
+    font-size: var(--font-medium);
+    background-color: var(--color-theme);
+    color: var(--color-text);
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 205px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.videoTitle {
+    margin-bottom: 0px;
+}
+
+.videoWatchCount {
+    margin-top: 0px;
+    color: var(--color-text);
+}
+
+.videoText {
+    font-size: var(--font-small);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#filterBox {
+    display: none;
+    width: 90%;
+    padding: 2%;
+    border-bottom: 1px solid var(--color-text);
+    background-color: var(--color-theme);
+    color: var(--color-text);
+}
+
+.filterBoxTitle {
+    font-size: var(--font-large);
+    padding: 0px;
+    margin: 0px;
+    color: var(--color-text);
+}
+
+.searchCard {
+    width: 90%;
+    margin-top: 16px;
+    color: var(--color-text);
+}
+
+.filterBoxMenu {
+    width: 33%;
+}
+
+.filterBoxMenuButton1, .filterBoxMenuButton2, .filterBoxMenuButton3 {
+    font-size: var(--font-medium);
+    width: 70%;
+    background-color: var(--color-theme);
+    color: var(--color-text);
+}
+
+#searchPage {
+    background-color: var(--color-theme);
+    margin-top: 88px;
+}
+
+#searchPageContent {
+    justify-content: center;
+    color: var(--color-text);
+}
+
+.videoImg {
+    width: 350px;
+    height: 200px;
+    margin-right: 16px;
+}
+
+.videoDescription {
+    color: var(--color-text);
+}
+
+.searchpageChannelIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 5%;
+}
+
+.searchpageChannelName {
+    color: var(--color-text);
+}
+
+.searchpageDescriptionSide {
+    width: 50%;
+}
+
+#searchFilterForm {
+    width: 100%;
+}
+
+#applyFilter {
+    justify-content: center;
+    width: 100%;
+}
+
+#filterButton {
+    width: 30%;
+}
+
+#json-video {
+    display: none;
+    visibility: hidden;
+}
+
+.channelImg {
+
+    max-width: 15%;
+}

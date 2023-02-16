@@ -1,0 +1,244 @@
+{
+    "profile": {
+        "navBar": {
+            "placeHolderSearch": "Search",
+            "buttonLogin": "Login",
+            "buttonChannel": "My Channel",
+            "buttonSubscription": "Subscription",
+            "buttonStudio": "MetaStudio",
+            "buttonSignOut": "Sign Out",
+            "buttonAccount": "My Account",
+            "buttonData": "Your data in MetaTube",
+            "buttonRestricted": "Restricted Mode : Off",
+            "labelThemeDark": "Dark",
+            "labelThemeBright": "Bright",
+            "tooltipSearch": "Search something",
+            "tooltipLogin": "Log in your account",
+            "tooltipUpload": "Upload a video",
+            "tooltipNotification": "Notifications",
+            "tooltipMeta": "MetaTube Homepage"
+        },
+        "button": {
+            "buttonPassword": "Update your password",
+            "buttonDelete": "Delete your account",
+            "buttonUser": "Update your Profil"
+        },
+        "passModal": {
+            "oldpassword": "Your old password",
+            "confirmpassword": "Confirm your password",
+            "newpassword": "Your new password"
+        },
+        "deleteModal": {
+            "title": "Delete Account",
+            "sentence": "Are you sure you want to delete your account?"
+        },
+        "profilModal": {
+            "title": "Update your profil"
+        },
+        "page": {
+            "title": "Choose how you appear and what you see on MetaTube",
+            "smallTitle": "Connected with address:   "
+        },
+        "accordeon": {
+            "underTitle1": "Your MetaTube's Channel",
+            "underTitle2": "Your account",
+            "underTitle3": "Your Information",
+            "buttonCreate": "Create your channel",
+            "ButtonChannel": "Mychannel",
+            "labelUsername": "Username",
+            "labelUEmail": "Email",
+            "labelDate": "Date of Birthday"
+        }
+    },
+    "global": {
+        "title": "MetaTube",
+        "filterButton": "Filters",
+        "filterBoxTitle1": "Upload date",
+        "filterBoxTitle2": "Type",
+        "filterBoxTitle3": "Order by",
+        "filterBoxMenuButton1": "Last hour",
+        "filterBoxMenuButton2": "This week",
+        "filterBoxMenuButton3": "This month",
+        "filterBoxMenuButton4": "This year",
+        "filterBoxMenuButton5": "Video",
+        "filterBoxMenuButton6": "Playlist",
+        "filterBoxMenuButton7": "Channel",
+        "filterBoxMenuButton8": "Relevance",
+        "filterBoxMenuButton9": "Upload date",
+        "filterBoxMenuButton10": "View count",
+        "filterBoxMenuButton11": "Rating"
+    },
+    "searches": {
+        "search1": {
+            "videoWatchCount": "1234 views",
+            "videoDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tellus non dolor viverra pretium. Sed neque ipsum, ultrices et vehicula id, imperdiet id neque. Donec iaculis a sapien ut lobortis. Cras aliquet id ex vitae scelerisque. Vestibulum rhoncus, velit sit amet pellentesque sodales, nisi arcu semper lorem, quis placerat quam sapien in orci. Sed quis feugiat tortor. Integer cursus metus sem, at dapibus lectus ultricies nec. Ut malesuada diam convallis sem feugiat sagittis. Suspendisse at neque malesuada, mattis felis sed, dictum ex.",
+            "searchpageChannelName": "Musculated Gooba",
+            "videoImg": "./front-end/assets/img/kokomi.jpeg",
+            "searchpageChannelIcon": "./front-end/assets/img/metatuber.jpeg",
+            "filterBoxTitle": "Video under this video don't talk about cucumbers."
+        },
+        "search2": {
+            "videoWatchCount": "666 views",
+            "videoDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tellus non dolor viverra pretium. Sed neque ipsum, ultrices et vehicula id, imperdiet id neque. Donec iaculis a sapien ut lobortis. Cras aliquet id ex vitae scelerisque. Vestibulum rhoncus, velit sit amet pellentesque sodales, nisi arcu semper lorem, quis placerat quam sapien in orci. Sed quis feugiat tortor. Integer cursus metus sem, at dapibus lectus ultricies nec. Ut malesuada diam convallis sem feugiat sagittis. Suspendisse at neque malesuada, mattis felis sed, dictum ex.",
+            "searchpageChannelName": "The gardening for noobs",
+            "videoImg": "./front-end/assets/img/cucumber.jpeg",
+            "searchpageChannelIcon": "./front-end/assets/img/bonhomme-baton.jpeg",
+            "filterBoxTitle": "How to have the best cucumbers?"
+        },
+        "search3": {
+            "videoWatchCount": "4321 views",
+            "videoDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tellus non dolor viverra pretium. Sed neque ipsum, ultrices et vehicula id, imperdiet id neque. Donec iaculis a sapien ut lobortis. Cras aliquet id ex vitae scelerisque. Vestibulum rhoncus, velit sit amet pellentesque sodales, nisi arcu semper lorem, quis placerat quam sapien in orci. Sed quis feugiat tortor. Integer cursus metus sem, at dapibus lectus ultricies nec. Ut malesuada diam convallis sem feugiat sagittis. Suspendisse at neque malesuada, mattis felis sed, dictum ex.",
+            "searchpageChannelName": "Musculated Gooba",
+            "videoImg": "./front-end/assets/img/cucumber.jpeg",
+            "searchpageChannelIcon": "./front-end/assets/img/metatuber.jpeg",
+            "filterBoxTitle": "I HAVE SO MUCH CUCUMBERS!"
+        }
+    },
+    "creation": {
+        "createTitle": "Here how the others will see you",
+        "create": "Create a Channel",
+        "name": "Name",
+        "Image": "./assets/img/Channel/play.png",
+        "Import": "Import picture",
+        "cancel": "Cancel"
+    },
+    "channel": {
+        "HomeSelection": "Home",
+        "VideoSelection": "Videos",
+        "PlaylistsSelection": "Playlists",
+        "ChannelSelection": "Channels",
+        "AboutUsSelection": "About Us",
+        "LockerSelection": "Locker",
+        "introduction": "Video Intro",
+        "videoOnline": "Video Online",
+        "popular": "Video Popular",
+        "play": "./assets/img/Channel/play.png"
+    },
+    "form": {
+        "login": {
+            "titleLogin": "Please fill the form to connect:",
+            "adress": "Adress Email",
+            "placeholderAdress": "Write your adress email",
+            "password": "Password",
+            "placeholderPassword": "Write your password",
+            "buttonLogin": "Login",
+            "buttonToRegister": "I don't have any account"
+        },
+        "register": {
+            "titleRegister": "Please fill the form to create an account :",
+            "labelProfile": "Select a photo",
+            "labelPseudo": "Pseudo",
+            "placeholderPseudo": "Write a pseudo",
+            "labelBirthday": "Date of Birth",
+            "labelAdress": "Adress Email",
+            "placeholderAdress": "Write your adress email",
+            "labelPassword": "Password",
+            "placeholderPassword": "Write your password",
+            "buttonRegister": "Register",
+            "buttonToLogin": "I have an account"
+        },
+        "updatePass": {
+            "modalBtn": "Update your password",
+            "labelAdress": "Adress Email",
+            "placeholderAdress": "Confirm your adress email",
+            "labelPassword": "Password",
+            "placeholderPassword": "Write your new password",
+            "buttonUpdate": "Update your password"
+        },
+        "deleteAccount": {
+            "modalBtn": "Delete Your Account",
+            "title": "Delete Account",
+            "question": "Are you sure you want to delete your account?",
+            "buttonCancel": "Cancel",
+            "buttonDelete": "Delete"
+        },
+        "error": {
+            "signup": "Warning, you have not filled in all the fields",
+            "pseudo": "Warning your pseudo is incorrect.",
+            "mailNotValid": "Warning your email is not valid.",
+            "mailAlreadyUse": "This email is already linked to another account.",
+            "birthday": "Sorry access to Meta Tube is reserved to the person over 11 years.",
+            "mailNotUse": "The email is not linked to any account.",
+            "password": "Warning password wrong"
+        }
+    },
+    "menu": {
+        "nav-elements": {
+            "Home": "Home",
+            "Explorer": "Explore",
+            "Subscriptions": "Subscriptions",
+            "Library": "Library",
+            "History": "History",
+            "YourVideos": "Your Videos",
+            "WatchLaters": "Watch Laters",
+            "LikedVideos": "Liked Videos",
+            "More": "More",
+            "Less": "Less",
+            "MetaTube Premium": "MetaTube Premium",
+            "Movies and Shows": "Movies and Shows",
+            "Gaming": "Gaming",
+            "Live": "Live",
+            "Music": "Music",
+            "Sports": "Sports",
+            "Learning": "Learning",
+            "News": "News",
+            "Fashion & Beauty": "Fashion & Beauty",
+            "Settings": "Settings",
+            "Report": "Report History",
+            "Help": "Help",
+            "SendFeedback": "Send Feedback"
+        },
+        "titles": {
+            "subscriptions": "SUBSCRIPTIONS",
+            "others": "MORE FROM METATUBE"
+        },
+        "footer": {
+            "About": "About",
+            "Press": "Press",
+            "Copyright": "Copyright",
+            "Contact us": "Contact us",
+            "Creators": "Creators",
+            "Advertise": "Advertise",
+            "Developers": "Developers",
+            "Report hateful content under LCEN": "Report hateful content under LCEN",
+            "Terms": "Terms",
+            "Privacy": "Privacy",
+            "Policy & Safety": "Policy & Safety",
+            "How YouTube works": "How YouTube works",
+            "Test new features": "Test new features",
+            "copyright": "© 2022 Metatubes -L1 Alt Cergy/Paris ❤️"
+        }
+    },
+    "home": {
+        "views": "views",
+        "date": "ago"
+    },
+    "explore": {
+        "rise": "Creator on the rise",
+        "Trending": "Trending",
+        "Music": "Music",
+        "Movies": "Movies & Shows",
+        "Live": "Live",
+        "Gaming": "Gaming",
+        "News": "News",
+        "Sports": "Sports",
+        "Learning": "Learning",
+        "Fashion": "Fashion & Beauty",
+        "TrendingTitle": "Trending Videos"
+    },
+    "MetaTubePremium": {
+        "title": "MetaTube and MetaTube Music ad-free offline, and in the background",
+        "txt-button": "Try it Free",
+        "price": "2-month free trial • Then €11.99/month",
+        "remind-text": "We'll remind you 7 days before your trial ends Recurring billing • Cancel anytime",
+        "add-price": "Or save money with a ",
+        "link-add-price": "family or student plan",
+        "link-premium": "Restrictions apply. Learn more here.",
+        "text-ad": "Ad-free & background play",
+        "text-ad2": "Watch videos uninterrupted by ads, while using other apps, or when the screen is locked.",
+        "text-dl": "Downloads",
+        "text-dl2": "Save videos for when you really need them – like when you’re on a plane or commuting.",
+        "text-music": "MetaTube Music Premium",
+        "text-music2": "Download our new music app and listen without interruptions."
+    }
+}
