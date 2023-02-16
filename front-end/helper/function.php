@@ -67,14 +67,14 @@ function postApi($data, $route)
 
   /*
   $context = stream_context_create($option);
-  $fp = fopen('10.160.33.111:8082/' . $route, 'r', false, $context) or die(error_get_last());
+  $fp = fopen('1192.168.128.6:8082/' . $route, 'r', false, $context) or die(error_get_last());
   $data = stream_get_contents($fp);
   fclose($fp);
   */
 
   $ch = curl_init();
   $curlConfig = array(
-      CURLOPT_URL            => '10.160.33.111:8082/' . $route,
+      CURLOPT_URL            => '192.168.128.6:8082/' . $route,
       CURLOPT_POST           => true,
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_POSTFIELDS     => json_encode($data),
@@ -106,7 +106,7 @@ function getApi($route)
   fclose($fp);
 */
   $curl = curl_init();
-  curl_setopt($curl, CURLOPT_URL, "10.160.33.111:8082/" . $route);
+  curl_setopt($curl, CURLOPT_URL, "192.168.128.6:8082/" . $route);
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
   $output = curl_exec($curl);
   curl_close($curl);

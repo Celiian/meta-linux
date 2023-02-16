@@ -7,7 +7,7 @@ $vid = getVid($video_id)[0];
 
 $comments = getComments($video_id);
 
-$source = "http://10.160.33.111:8082/watch/" . $video_id;
+$source = "http://192.168.128.6:8082/watch/" . $video_id;
 
 $tags = "";
 $description = $vid["description"];

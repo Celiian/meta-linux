@@ -5,9 +5,9 @@ var sqlConn;
 module.exports = class DatabaseManager {
   static createConn() {
     sqlConn = mysql.createConnection({
-      host: "10.160.33.111",
-      user: "codeur",
-      password: "coding",
+      host: "192.168.128.8",
+      user: "admin",
+      password: "admin",
       database: "metatube",
     });
     return sqlConn;
