@@ -71,27 +71,9 @@ function postApi($data, $route)
   $data = stream_get_contents($fp);
   fclose($fp);
 
-  $data = json_decode($data, true)
+  $data = json_decode($data);
 
-  /*
-
-  $ch = curl_init();
-  $curlConfig = array(
-      CURLOPT_URL            => '192.168.128.6:8082/' . $route,
-      CURLOPT_POST           => true,
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_POSTFIELDS     => json_encode($data),
-      CURLOPT_HTTPHEADER => array('Content-Type:application/json')
-  );
-  curl_setopt_array($ch, $curlConfig);
-  $result = curl_exec($ch);
-  curl_close($ch);
-
-
-  $response = json_decode($result);
-  */
-
-  return $response;
+  return $data;
 }
 
 function getApi($route)
@@ -110,14 +92,6 @@ function getApi($route)
   fclose($fp);
   $data = json_decode($data, true);
 
-/*
-  $curl = curl_init();
-  curl_setopt($curl, CURLOPT_URL, "192.168.128.6:8082/" . $route);
-  curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-  $output = curl_exec($curl);
-  curl_close($curl);
-  $data = json_decode($output, true);
-  */
   return $data;
 }
 
