@@ -34,7 +34,7 @@ module.exports = class DatabaseManager {
       if (error) {
         console.error(error);
         console.log("Connection to the Database : FAILED");
-      } else console.log("Connection to the Database : SUCESS");
+      } else console.log("Connection to the Database : SUCCESS");
     });
   }
 };

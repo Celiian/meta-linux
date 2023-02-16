@@ -65,12 +65,15 @@ function postApi($data, $route)
       "user-agent" => "toto",
   ];
 
-  /*
+
   $context = stream_context_create($option);
   $fp = fopen('1192.168.128.6:8082/' . $route, 'r', false, $context) or die(error_get_last());
   $data = stream_get_contents($fp);
   fclose($fp);
-  */
+
+  $data = json_decode($data, true)
+
+  /*
 
   $ch = curl_init();
   $curlConfig = array(
@@ -86,13 +89,14 @@ function postApi($data, $route)
 
 
   $response = json_decode($result);
+  */
 
   return $response;
 }
 
 function getApi($route)
 {
-  /*
+
 
   $opts = array(
     'http' => array(
@@ -104,13 +108,16 @@ function getApi($route)
   $fp = fopen($path, 'r', false, $context);
   $data = stream_get_contents($fp);
   fclose($fp);
-*/
+  $data = json_decode($data, true);
+
+/*
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL, "192.168.128.6:8082/" . $route);
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
   $output = curl_exec($curl);
   curl_close($curl);
   $data = json_decode($output, true);
+  */
   return $data;
 }
 
