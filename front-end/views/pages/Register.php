@@ -8,7 +8,7 @@ ob_start() ?>
 <div class="backform"></div>
 <!-- WRAPPER REGISTER -->
 <div class="wrap--form" style="margin-top: 40px">
-   <form enctype="multipart/form-data" class="form--register" id="form" method="post" action="/back-end/actions/RegisterAction.php">
+   <form enctype="multipart/form-data" class="form--register" id="form" method="post" action="/front-end/actions/RegisterAction.php">
       <div class="close-form">
          <a href="/index.php?name=Home">&times;</a>
 

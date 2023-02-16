@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="">
 <?php ob_start();
 
-include_once './back-end/actions/Search.php';
+include_once './front-end/actions/Search.php';
 $vidvidvid = postAPIString($_POST["searchBar"]);
 
 $vids = (($vidvidvid->videos)->data);

@@ -1,4 +1,4 @@
 {
-    "port":8082,
-    "storageLocation":"C:/Users/Ruiseki/sprint/MetaTube/storage/"
+  "port": 8082,
+  "storageLocation": "/Users/celian/Documents/MetaTube/storage/"
 }

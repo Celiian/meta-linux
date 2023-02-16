@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include_once "./back-end/actions/WatchVideo.php";
+include_once "./front-end/actions/WatchVideo.php";
 $video_id = $_GET["id"];
 // $path = $path_key . $video_id;
 $vid = getVid($video_id)[0];
@@ -10,7 +10,7 @@ $comments = getComments($video_id);
 $source = "http://10.160.33.111:8082/watch/" . $video_id;
 
 $tags = "";
-$description = $vid->description;
+$description = $vid["description"];
 if ($description != null) {
     $descriptionExploded = explode(' ', $description);
     foreach ($descriptionExploded as $word) {
@@ -44,7 +44,7 @@ if (isset($video_id)) {
                         </svg>
                     </div>
 
-                    <video controls class="video" id="video" preload="metadata" poster="<?= $vid->thumbnail ?>">
+                    <video controls class="video" id="video" preload="metadata" poster="<?= $vid["thumbnail"] ?>">
                         <source src=<?php echo $source ?> type="video/mp4">
                         </source>
                     </video>
@@ -211,24 +211,24 @@ if (isset($video_id)) {
                     <p class="tags"><?= $tags ?>
                     </p>
                     <p class="watch-vid-title">
-                        <?= $vid->title ?>
+                        <?= $vid["title"] ?>
                     </p>
                     <div class="video-views-date-desc">
                         <div class="video-date-views">
-                            <p class="watch-video-views"> <?= $vid->viewNumber ?> views
+                            <p class="watch-video-views"> <?= $vid["viewNumber"] ?> views
                             </p>
                         </div>
 
-                        <p class="video-description"> <?= $vid->description ?></p>
+                        <p class="video-description"> <?= $vid["description"] ?></p>
                     </div>
                     <div class="video-icons">
 
                         <div class="video-icon like-button" onclick="like()">
-                            <form action="/back-end/actions/InterAction.php" method="post" class="interaction">
+                            <form action="/front-end/actions/InterAction.php" method="post" class="interaction">
                                 <?php if (isset($_SESSION['connect'])) { ?>
                                 <button>
                                     <img src="/front-end/assets/img/like.svg" alt="" class="like-svg svg">
-                                    <input type="hidden" name="idVideo" value="<?= $vid->id ?>">
+                                    <input type="hidden" name="idVideo" value="<?= $vid["id"] ?>">
                                     <input type="hidden" name="idUser" value="<?= $_SESSION['user']['id'] ?>">
                                 </button>
                                 <?php } else { ?>
@@ -237,14 +237,14 @@ if (isset($video_id)) {
                                 </a>
                                 <?php } ?>
                             </form>
-                            <p><?= $vid->likeNumber ?></p>
+                            <p><?= $vid["likeNumber"] ?></p>
                         </div>
                         <div class="video-icon dislike-button">
-                            <form action="/back-end/actions/InterAction.php" method="post" class="interaction">
+                            <form action="/front-end/actions/InterAction.php" method="post" class="interaction">
                                 <?php if (isset($_SESSION['connect'])) { ?>
                                 <button>
                                     <img src="/front-end/assets/img/dislike.svg" alt="" class="dislike-svg svg">
-                                    <input type="hidden" name="dislike" value="<?= $vid->id ?>">
+                                    <input type="hidden" name="dislike" value="<?= $vid["id"] ?>">
                                     <input type="hidden" name="idUser" value="<?= $_SESSION['user']['id'] ?>">
                                 </button>
                                 <?php } else { ?>
@@ -254,7 +254,7 @@ if (isset($video_id)) {
                                 </a>
                                 <?php } ?>
                             </form>
-                            <p><?= $vid->dislikeNumber ?></p>
+                            <p><?= $vid["dislikeNumber"] ?></p>
                         </div>
                         <div class="video-icon">
                             <img src="/front-end/assets/img/share.svg" alt="" class="svg">
@@ -282,11 +282,11 @@ if (isset($video_id)) {
                 </div>
                 <div class="below-content-box">
                     <div class="channel-watch box-below">
-                        <img src="data:image/png;base64,<?= $vid->channelProfilePicture ?>" alt="" width="36px"
-                            height="36px">
+                        <img src="data:image/png;base64,<?= $vid["channelProfilePicture"]["data"] ?>" alt="" width="40px"
+                            height="40px">
                         <div class="watch-chan-infos">
-                            <div class="video-watch-name-channel"><?= $vid->channelName ?></div>
-                            <div class="video-watch-subscribers"><?= $vid->subscriberNumber ?></div>
+                            <div class="video-watch-name-channel"><?= $vid["channelName"] ?></div>
+                            <div class="video-watch-subscribers"><?= $vid["subscriberNumber"] ?></div>
                         </div>
                         <?php if (isset($_SESSION['connect'])) { ?>
                         <button class="sub-button-watch">SUBSCRIBE</button>
@@ -312,7 +312,7 @@ if (isset($video_id)) {
             <div class="comments-suggestions">
                 <div class="comments-section">
                     <div class="comments-section-infos">
-                        <p class="comments-section-number">27,400 Comments</p>
+                        <p class="comments-section-number">0 Comments</p>
                     </div>
                     <form method="post">
                         <div class="add-comment">
@@ -357,29 +357,29 @@ if (isset($video_id)) {
 
                     <div class="watch-comments">
                         <div class="comments-name">
-                            <img src="data:image/png;base64,<?= $comments[$i]->channelProfilePicture ?>" alt=""
+                            <img src="data:image/png;base64,<?= $comments[$i]["channelProfilePicture"] ?>" alt=""
                                 class="img-comment-user" style="border-radius:50%; width:40px; height:40px;">
-                            <p class="name-comment-user"><?= $comments[$i]->channelName ?></p>
-                            <p class="date-comments"><?= $comments[$i]->date ?></p>
+                            <p class="name-comment-user"><?= $comments[$i]["channelName"] ?></p>
+                            <p class="date-comments"><?= $comments[$i]["date"] ?></p>
                         </div>
                         <p class="comments-content">
-                            <?= $comments[$i]->content ?>
+                            <?= $comments[$i]["content"] ?>
 
                         </p>
                         <div class="comment-likes">
                             <div class="comment-like">
                                 <img src="/front-end/assets/img/like.svg" alt="like" class="comment-like-img svg">
-                                <p class="comment-like-number"><?= $comments[$i]->likeNumber ?></p>
+                                <p class="comment-like-number"><?= $comments[$i]["likeNumber"] ?></p>
                             </div>
                             <div class="comment-dislike">
                                 <img src="/front-end/assets/img/dislike.svg" alt="dislike"
                                     class="comment-dislike-img svg">
-                                <p class="comment-disike-number"><?= $comments[$i]->dislikeNumber ?></p>
+                                <p class="comment-disike-number"><?= $comments[$i]["dislikeNumber"] ?></p>
                             </div>
                         </div>
                         <button class="comments-reply">
                             <img src="/front-end/assets/img/arrow-reply.svg" alt="" class="svg">
-                            <p class="replies-comment"> View <?= $comments[$i]->responseNumber ?> replies</p>
+                            <p class="replies-comment"> View <?= $comments[$i]["responseNumber"] ?> replies</p>
                         </button>
                     </div>
                 </div>

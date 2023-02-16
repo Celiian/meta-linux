@@ -109,7 +109,7 @@
                         <?= $enJson['profile']['navBar']['buttonStudio'] ?>
                     </a>
                     <!-- LINK TO SIGN OUT -->
-                    <a href="/back-end/actions/disconnect.php" class="drop-profil">
+                    <a href="/front-end/actions/disconnect.php" class="drop-profil">
                         <div>
                             <img src="./front-end/assets/img/Logo/log-out.svg" alt="" class="svg">
                         </div>

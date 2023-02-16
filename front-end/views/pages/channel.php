@@ -1,5 +1,5 @@
 <?php
-include './back-end/actions/CreateChannel.php';
+include './front-end/actions/CreateChannel.php';
 if (isset($_POST['channelCreated'])) {
     createChannel();
 }

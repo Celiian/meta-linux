@@ -1,5 +1,5 @@
 <?php ob_start();
-include './back-end/actions/trending.php';
+include './front-end/actions/trending.php';
 
 $vids = getVids();
 

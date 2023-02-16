@@ -1,7 +1,7 @@
 <?php
 $title = "login";
 ob_start();
-//require_once __DIR__ .'/../../../back-end/actions/login_action.php';
+//require_once __DIR__ .'/../../../front-end/actions/login_action.php';
 ?>
 <script>
     $(function() {
@@ -28,7 +28,7 @@ ob_start();
 
 <div class="wrap--form" style="margin-top: 100px">
 
-    <form class="form--register" action="/back-end/actions/LoginAction.php" id="form" method="POST">
+    <form class="form--register" action="/front-end/actions/LoginAction.php" id="form" method="POST">
         <div class="close-form">
             <a href="/index.php?name=Home">&times;</a>
 

@@ -2,7 +2,7 @@
 
 <div id="delete" class="modal">
 
-  <form class="modal-content" action="/back-end/actions/DeleteAccount.php">
+  <form class="modal-content" action="/front-end/actions/DeleteAccount.php">
     <span onclick="document.getElementById('delete').style.display='none'" class="close" title="Close Modal">&times;</span>
     <div class="container">
       <h1><?=$enJson['profile']['deleteModal']['title']?></h1>

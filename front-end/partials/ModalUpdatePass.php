@@ -6,7 +6,7 @@
 
  <div id="password" class="modal" <?php if ($_SESSION['process'] == 'password') echo 'style = "display : block";'; ?>>
      <form class="modal-content" enctype="multipart/form-data" id="formUpdatePass" method="post"
-         action="/back-end/actions/UpdatePassword.php">
+         action="/front-end/actions/UpdatePassword.php">
          <div class="close-form">
              <a onclick="document.getElementById('password').style.display='none' <?php $_SESSION['process'] = '' ?>"
                  class="close" title="Close Modal">&times;</a>

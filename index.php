@@ -25,9 +25,9 @@ if (empty($_GET['name']) == false) {
 include __DIR__ . '/front-end/views/pages/Upload.php'; //$channelVideoUpload
 include __DIR__ . '/front-end/views/components/video.php'; // $filterbar
 include __DIR__ . '/front-end/views/components/FilterBar.php'; // $filterbar
-include  __DIR__ . '/front-end/views/pages/' . $pageName . '.php'; // $page 
+include  __DIR__ . '/front-end/views/pages/' . $pageName . '.php'; // $page
 include  __DIR__ . "/front-end/partials/Menu.php"; // $menu
-include __DIR__ . '/front-end/views/pages/channel.php'; // 
+include __DIR__ . '/front-end/views/pages/channel.php'; //
 include  __DIR__ . "/front-end/partials/NavBar.php"; // $navBar
 
 

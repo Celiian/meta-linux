@@ -1,6 +1,6 @@
 <?php
 
-include_once "./back-end/actions/UploadVideo.php";
+include_once "./front-end/actions/UploadVideo.php";
 
 if (isset($_POST['but_upload'])) {
    upload();
