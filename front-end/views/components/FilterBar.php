@@ -7,7 +7,7 @@
             <a class="filter-text" href="/index.php?name=Home">All</a>
         </li>
         <li class="filters-element">
-            <a class="filter-text" href="">Video games</a>
+            <a class="filter-text" href="">Video test</a>
         </li>
         <li class="filters-element">
             <a class="filter-text" href="">Anime</a>
