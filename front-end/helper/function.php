@@ -67,7 +67,7 @@ function postApi($data, $route)
 
 
   $context = stream_context_create($option);
-  $fp = fopen('1192.168.128.6:8082/' . $route, 'r', false, $context) or die(error_get_last());
+  $fp = fopen('192.168.128.6:8082/' . $route, 'r', false, $context) or die(error_get_last());
   $data = stream_get_contents($fp);
   fclose($fp);
 
@@ -86,7 +86,7 @@ function getApi($route)
     )
   );
   $context = stream_context_create($opts);
-  $path = "localhost:8082/" . $route;
+  $path = "192.168.128.6:8082/" . $route;
   $fp = fopen($path, 'r', false, $context);
   $data = stream_get_contents($fp);
   fclose($fp);
