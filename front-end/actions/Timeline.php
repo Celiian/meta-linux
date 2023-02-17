@@ -11,7 +11,7 @@ function redirect()
     header('location: index.php?name=Home');
 }
 
-$path_key = "/Users/celian/Documents/MetaTube/storage/";
+$path_key = "meta-linux/storage/";
 
 
 function getCreator($id)

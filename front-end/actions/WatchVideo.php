@@ -1,6 +1,6 @@
 <?php
 include_once __DIR__ . '/../helper/function.php';
-$path_key = "/Users/celian/Documents/MetaTube/storage/";
+$path_key = "meta-linux/storage/";
 
 function getVid($id)
 {
