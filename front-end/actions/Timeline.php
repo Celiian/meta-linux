@@ -11,7 +11,7 @@ function redirect()
     header('location: index.php?name=Home');
 }
 
-$path_key = "meta-linux/storage/";
+$path_key = "/home/back/meta-linux/storage/";
 
 
 function getCreator($id)
