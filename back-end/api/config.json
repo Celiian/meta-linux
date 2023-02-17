@@ -1,4 +1,4 @@
 {
   "port": 8082,
-  "storageLocation": "storage/"
+  "storageLocation": "/home/back/meta-linux/storage/"
 }
