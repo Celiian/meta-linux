@@ -1,6 +1,6 @@
 <?php
 include_once __DIR__ . '/../helper/function.php';
-$path_key = "/home/front/meta-linux/storage/";
+$path_key = "/var/www/meta-linux/storage/";
 
 function getVid($id)
 {
